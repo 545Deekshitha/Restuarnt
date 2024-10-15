@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-image: url("https://media4.giphy.com/media/ipx8f478mCtacw1sQG/giphy.gif?cid=6c09b9529oean1djt43wge58pjykvhlwh7jok5kzmiu62k65&ep=v1_internal_gif_by_id&rid=giphy.gif&ct=g");
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .container {
+            margin-top: 10%;
+        }
+    </style>
+</head>
+
+<body>
+    <form method="post">
+        <input type="hidden" name="action" value="add">
+        <div class="container">
+
+            <h1>Add a Food Item</h1>
+            
+            <p>
+                <label> Item name:</label>
+                <input  required type="text" placeholder="Enter a Item name" name="name"><br>
+            </p>
+            <p>
+                <label>Item Price:</label>
+                <input  required type="text" placeholder="Enter a Price" name="price"><br>
+            </p>
+            <button>sumbit</button>
+        </div>
+    </form>
+</body>
+
+</html>

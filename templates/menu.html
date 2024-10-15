@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-image: url("https://c1.wallpaperflare.com/preview/546/136/32/menu-pizza-vegetables-eat.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .container{
+            margin-top: 25%;
+            margin-left: 60%;
+        }
+        .button{
+            background-color:rgba(32,27,23,255);
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <!-- <h1 style="color: antiquewhite;">Your Menu is</h1>
+        <h2 >{{menu1}}</h2> -->
+
+<!-- 
+        <h2>Current Menu Items:</h2> -->
+        <table  border="1px">
+            <tr>
+                <th style="color:brown;">Id</th>
+                <th style="color:brown;">Item</th>
+                <th style="color:brown;">Price</th>
+                <th style="color:brown;"> Update </th>
+                <th style="color:brown;"> Delete </th>
+               
+
+            </tr>
+            {% for item_id, item in menu1.items() %}
+            
+            <tr>
+                <td style="color:darkkhaki;"> {{ item_id }} </td>
+                <td style="color:darkkhaki;"> {{ item['name'] }}</td>
+                <td style="color:darkkhaki;">{{ item['price'] }}Rs </td>
+
+                <td>
+                    <a href="{{url_for('update',item_id=item_id)}}"><button class="button"style="color:green">Update item</button></a>
+                </td>
+                <td>
+                    <a href="{{url_for('delete',item_id=item_id)}}"><button class="button"style="color:red;">Delete Item</button></a>
+                </td>
+                
+        
+            </tr>
+            {% endfor %}
+        </table>
+       
+    </div>
+
+
+
+    
+</body>
+</html>

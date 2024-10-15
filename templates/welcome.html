@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-image: url("https://static.vecteezy.com/system/resources/thumbnails/022/576/372/small_2x/image-of-wooden-table-in-front-of-abstract-blurred-background-of-resturant-lights-wood-table-top-on-blur-of-lighting-in-night-cafe-restaurant-background-selective-focus-generative-ai-photo.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            min-height: 80vh;
+        
+        }
+        .container{
+            margin-top: 10%;
+            text-align: center;
+
+            
+        }
+        .login{
+            border-radius: 25px;
+            width: 8%;
+            padding: 8px 0px 8px 5px;
+        }
+        .login:hover{
+            background-color: green;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+    <h1 style="color:black">Welcome To My Restuarnt </h1>
+   
+
+    
+   
+    <p>
+        <a href="{{url_for('login')}}"><button class="login">Admin Login</button></a>
+
+    </p>
+    
+   
+</div>
+</body>
+
+</html>
